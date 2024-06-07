@@ -15,7 +15,6 @@ const FeedbackPage = () => {
       const exampleSolutions = [
         { id: 1, title: 'Solution 1', code: 'console.log("Hello, World!");' },
         { id: 2, title: 'Solution 2', code: 'function add(a, b) { return a + b; }' },
-        // 템플릿 문자열을 일반 문자열로 변경
         { id: 3, title: 'Solution 3', code: 'const greet = (name) => "Hello, " + name + "!";' },
       ];
       setSolutions(exampleSolutions);
