@@ -1,16 +1,16 @@
 .feedback-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* 수직으로 정렬 */
     background-color: #333;
     color: white;
     padding: 10px;
-    width: 100%; /* 수정된 부분 */
-    box-sizing: border-box; /* 수정된 부분 */
+    width: 100%; /* 전체 너비 차지 */
+    box-sizing: border-box;
   }
   
   .top-header, .bottom-header {
     display: flex;
-    justify-content: space-between; /* 좌우로 정렬 */
+    justify-content: space-between; /* 좌우로 요소 정렬 */
     align-items: center;
     width: 100%;
   }
