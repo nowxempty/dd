@@ -8,8 +8,9 @@
   
   .top-header, .bottom-header {
     display: flex;
-    justify-content: space-between; /* 변경된 부분 */
+    justify-content: space-between; /* 이 부분이 좌우로 정렬되는 것을 해결합니다. */
     align-items: center;
+    width: 100%;
   }
   
   .actions, .problem-selector {
