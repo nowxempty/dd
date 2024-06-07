@@ -5,7 +5,7 @@ import CodeEditorPageFooter from './CodeEditorPageFooter';
 import '../styles/CodeEditorPage.css';
 
 const CodeEditorPage = () => {
-  const [code, setCode] = useState('// write your code here');
+  const [code, setCode] = useState('// Write your JavaScript code here');
   const [result, setResult] = useState('');
   const [problem, setProblem] = useState('');
 
@@ -20,9 +20,20 @@ const CodeEditorPage = () => {
 
   const runCode = () => {
     try {
+      const captureConsole = [];
+      const originalConsoleLog = console.log;
+      console.log = (...args) => {
+        captureConsole.push(args.join(' '));
+        originalConsoleLog(...args);
+      };
+
       // eslint-disable-next-line no-eval
-      const output = eval(code);
-      setResult(String(output));
+      const returnValue = eval(code);
+
+      console.log = originalConsoleLog;
+
+      const output = captureConsole.join('\n');
+      setResult(output || returnValue || 'Code executed successfully.');
     } catch (error) {
       setResult(String(error));
     }
@@ -61,7 +72,7 @@ const CodeEditorPage = () => {
           />
           <div className="result-container">
             <h3>Result</h3>
-            <p>{result}</p>
+            <pre>{result}</pre>
           </div>
         </div>
       </div>

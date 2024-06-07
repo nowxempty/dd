@@ -1,39 +1,33 @@
 .ranking-page {
-    padding: 20px;
-    background-color: #f4f4f9;
-    height: calc(100vh - 120px);
-  }
-  
-  .ranking-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .ranking-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .ranking-rank, .ranking-username, .ranking-score {
-    width: 30%;
-  }
-  
-  .ranking-rank {
-    text-align: left;
-  }
-  
-  .ranking-username {
-    text-align: center;
-  }
-  
-  .ranking-score {
-    text-align: right;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: center; /* 수평 중앙 정렬 */
+  padding: 20px;
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.ranking-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-rank, .ranking-username, .ranking-score {
+  flex: 1;
+}
