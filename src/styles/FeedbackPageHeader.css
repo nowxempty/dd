@@ -4,11 +4,13 @@
     background-color: #333;
     color: white;
     padding: 10px;
+    width: 100%; /* 수정된 부분 */
+    box-sizing: border-box; /* 수정된 부분 */
   }
   
   .top-header, .bottom-header {
     display: flex;
-    justify-content: space-between; /* 이 부분이 좌우로 정렬되는 것을 해결합니다. */
+    justify-content: space-between; /* 좌우로 정렬 */
     align-items: center;
     width: 100%;
   }
