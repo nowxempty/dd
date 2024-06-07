@@ -1,0 +1,40 @@
+.ranking-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .top-header, .bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile span {
+    margin-right: 10px;
+  }
+  
+  .header-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .header-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .status {
+    text-align: center;
+    width: 100%;
+  }
+  
