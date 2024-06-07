@@ -8,7 +8,7 @@
   
   .top-header, .bottom-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* 변경된 부분 */
     align-items: center;
   }
   
